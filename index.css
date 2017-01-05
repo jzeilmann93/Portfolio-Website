@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* Remove padding and margin */ 
+*  { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+/* HTML & Body */
+
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 16px;
+  color: white;
+  font-family:run;
+  height: auto;
+  margin: 3.3% 4%;
+}
+
+/* Div Boxes */
+.top {
+	overflow: hidden;
+	margin-bottom: 2.5%;
+}
+.middle {
+	overflow: hidden;
+	margin-bottom: 3%;
+	
+}
+/* Header  Styles */
+
+.headerBox {
+    float: left;
+    display:block;
+    overflow: hidden;
+	margin-bottom: 2%;
+	
+
+    
+}
+.mainHeader {
+	font-size: 4.5em;
+	color: #f39c12;
+	margin: 0px;
+	letter-spacing: 3px;
+	
+	
+}
+
+.subHeader {
+	font-size: 1.5em;
+	letter-spacing: 3px;
+	margin: 0px;
+}
+/* Navigation */
+.navDiv {
+	float:right;
+	display: inline-block;
+	margin-top: 0px;
+	overflow: hidden;
+	padding: 0px;
+	padding-top:1%;
+	
+	
+}
+.navItem {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	padding-right: 20px;
+	font-size: 2.9em;
+	margin-left:0;
+	margin-top: 0px;
+	
+}
+.navItem:last-child{
+	padding-right: 0px
+	
+}
+
+
+.mainNav {
+	padding: 0;
+	margin-top: 0px;
+	float: right;
+	font-family: run ;
+}
+/* Navigation Link Styles */
+
+a {
+	color: white;
+	text-decoration:none;}
+
+a:hover {
+	color:#f39c12;
+}
+	
+/* Homepage text */
+
+.hometext {
+	color:white;
+	font-size: .75em;
+	font-family: sanchez;
+	margin-left: 30px;
+	width: 40%;
+	float: left;
+	background-color: rgba(0,0,0,0.7);
+	padding-left: 45px;
+	padding-right: 40px;
+	padding-bottom: 130px;
+	display: inline-block;
+}
+
+.hometextA {
+	color:white;
+	font-size: .75em;
+	font-family: sanchez;
+	margin-left: 30px;
+	width: 40%;
+	float: right;
+	background-color: rgba(0,0,0,0.7);
+	padding: 15px 30px 20px;
+	display: inline-block;
+}
+
+#hometextB {
+	color:white;
+	font-size: .75em;
+	font-family: sanchez;
+	width: 40%;
+	float: left;
+	background-color: rgba(0,0,0,0.7);
+	padding-left: 45px;
+	padding-right: 40px;
+	padding-bottom: 0px;
+}
+
+
+aside#hello {
+	display: inline-block;
+	float: left;
+	width: 45%;
+	margin-left: 8%;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: rgba(0,0,0,0.7);
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 20px;
+	font-family: sanchez;
+	
+}
+h2{ 
+	font-size: 3em;
+	margin-top:  0px;
+	color: "white";
+}
+.intro {
+	font-size: 2em;
+}
+
+
+
+/* Custom Font faces */
+@font-face {
+	font-family: sanchez;
+	src: url(Sanchezregular.otf);
+}
+@font-face {
+	font-family: run;
+	src: url(run.ttf);
+       
+}
+@font-face {
+	font-family: sig;
+	src: url(Signerica_Medium.ttf);
+       
+}
+
+
+
+/* Footer */
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:rgba(0,0,0,0.7);
+   text-align:center;
+   font-size: 1.3em;
+   }
+/* Image Styles */
+img {
+	border: 3px solid black;
+	max-width: 100%;
+}
+
+/* Contact Page: Google Map Widget */
+#gmap {
+	float: left;
+	display: inline-block;
+	border: 3px solid black;
+}
+
+
+
+#name {
+	font-family: sig;
+	font-size: 1.6em;
+}
+
+/*Contact Page: Social Media Icons */
+.socialicon {
+	border: none;
+	margin-right: 10px;
+}
+
+.icon {
+	margin-left: 60px;
+	float: left;
+	margin-top: 40px;
+	outline: none;
+	display: inline;
+}
+.main {
+	display: inline;
+	
+}
+
+/* Contact Info */
+
+.cInfo {
+	color:white;
+	font-size: 1.2em;
+	font-family: sanchez;
+}
+
+#video {
+	display: inline-block;
+	float: left;
+	padding: 20px;
+	border: 1px solid black;
+	background-color: rgba(0,0,0,0.7);
+}
+
+object {
+	height: auto;
+}
+
+#seopaper {
+	display: inline-block;
+	float: left;
+	width: 100%
+}
+
+.pdf {
+	float: left
+}
+
+#pdf1 {
+	display:block;
+	float:left;
+}
+
+#resume {
+	margin: auto;
+    width: 60%;
+    padding: 10px;
+	margin-top: 30px;
+}
+
+/* Scroll to top jquery */
+.scrollToTop{
+	width:128px; 
+	height:190px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:10px;
+	right:5px;
+	display:none;
+	background: url("aa.png") no-repeat ;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+.PortIcons {
+	width: 40%;
+	display: inline-block;
+	float: left;
+	margin-right: 7s%;
+}

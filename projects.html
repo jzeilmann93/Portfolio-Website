@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Projects</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+
+
+<script type="text/javascript">
+
+            <!-- Comment: Image dimension: width:700px, -->
+            var image1=new Image()               
+            image1.src="gore1.JPG"                 
+
+            var image2=new Image()
+            image2.src="gore2.JPG"           
+
+            var image3=new Image()
+            image3.src="gore3.JPG" 
+			
+			var image4=new Image()
+            image4.src="gore4.JPG"
+				
+			function mouseOver(img) {
+				img.src="Home.png"}
+				
+			function mouseOut(img) {
+				img.src="Events.png"}
+				
+				
+</script>
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+<meta name=viewport content='width=700'>
+</head>
+
+<body>
+<div class= "top">
+<header class="headerBox">
+	<h1 class="mainHeader">Joshua Zeilmann</h1>
+	<h2 class="subHeader"> ux design. front-end development</h2>
+</header>
+
+    <nav class="navDiv">
+    	<ul class= "mainNav">
+        	<li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="about.html">About</a></li>
+            <li class="navItem"><a href="projects.html">Work</a></li>
+            <li class="navItem"><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+</div>
+<div class="middle">
+
+	<embed src="MindspaceAppMockup.pdf" width="50%" height= "550px" >
+
+	<aside class="hometextA">
+		<h2>Mindspace App Mockup</h2>
+			<p class="intro">This is a mockup of a organizer app that I designed. This app was designed to be a complete life organizer.</p>
+			
+			
+	</aside>
+</div>	
+<div class="middle">
+    <!-- Gore SlideShow Script -->	
+	<img id="homepageslide" src="image1.jpg"  name="slideshow" alt="imageslideshow" width="40%">
+
+    <script type="text/javascript"> 
+	
+    var numberImage=1
+    function myslide(){
+    document.images.slideshow.src=eval("image"+numberImage+".src")
+    if(numberImage<4) 
+    numberImage = numberImage + 1
+    else
+    numberImage=1
+    setTimeout("myslide()",2000)
+    }
+    myslide()
+
+    </script>
+	
+		<aside class="hometextA">
+			<h2>Gore Typeface Design</h2>
+				<p class="intro">This is a typeface I designed.The typeface features Uppercase letters, lowercase letters, and special characterds. Starting with some rough sketches, I traced over the sketches with a dark ink pen. Then I used a scanner to turn the characters into a vector format.</p>
+		</aside>
+</div>
+		
+
+<div class="middle">
+	
+	<p  style=" margin: 12px auto 6px auto; margin-left: 20px; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;">   <a title="View Gander Mountain SEO on Scribd" href="https://www.scribd.com/doc/296309738/Gander-Mountain-SEO"  style="text-decoration: underline;" ></a></p><iframe class="scribd_iframe_embed" src="https://www.scribd.com/embeds/296309738/content?start_page=1&view_mode=scroll&show_recommendations=true" data-auto-height="false" data-aspect-ratio="undefined" scrolling="no" id="doc_1386" width="40%" height="600" frameborder="0"></iframe>
+	
+	<aside class="hometextA">
+		<h2>Search Engine Optimization Repoert</h2>
+			<p class="intro">A report of search engine optimization data for Gander Mountain. Data such as this can be used to increase a website's ability to be found using search engines such as Google. This is very important in today's world because most users enter a website through a link found using a search engine.</p>
+	</aside>
+	
+	
+		
+</div>
+	
+<div class="middle">
+    	<img id="homepageslide" src="Events.png"  name="slideshow" alt="imageslideshow" width="40%" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+	
+		<aside class="hometextA">
+		<h2>Balsamiq Wireframe/ Mockup</h2>
+			<p class="intro">Balsamiq is a wireframing and mock up program with a high focus on usability. This is a wireframe I created of the American Advertising Federation of Kansas City events page and their homepage. Hover over the image to cycle through the two images.</p>
+			
+			 
+			</form>
+		</aside>
+</div>
+
+<div class="middle">
+
+	<embed src="project1Zeilmann.pdf" width="50%" height= "550px" >
+
+	<aside class="hometextA">
+		<h2>Giant Bicycle Homepage Redesign</h2>
+			<p class="intro">This was a mock-up I create of a redesign of Giant Bicycle's homepage.</p>
+			
+			
+	</aside>
+</div>	
+
+
+
+	<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+	});
+	
+
+	</script>
+	
+	
+	
+	
+	
+
+	
+	<a href="#" class="scrollToTop"></a>
+	<footer class="footer">
+		<address>Zeilmann Development and Design</address>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<title>About</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+<meta name=viewport content='width=700'>
+</head>
+
+<body>
+<div class="top">
+
+<header class="headerBox">
+	<h1 class="mainHeader">Joshua Zeilmann</h1>
+	<h2 class="subHeader"> ux design. front-end development</h2>
+</header>
+
+    <nav class="navDiv">
+    	<ul class= "mainNav">
+        	<li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="about.html">About</a></li>
+            <li class="navItem"><a href="projects.html">Work</a></li>
+            <li class="navItem"><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+</div>
+     
+<div class="middle">
+        <img id="profile" src="profilePic.jpg" alt="Joshua Zeilmann" style="width:400px">
+		<aside class="hometextA">
+			<p class="intro"> Originally from Kansas City, Missouri, I am a senior studying Interactive Digital Media at Northwest Missouri State University. Upon graduation in December of 2016, I will pursue a career in front-end development and design.</p> <p class="intro">I enjoy designing and developing user-friendly websites from the ground up. I believe, like any well designed product, a website should start by crafting a solid framework focused on user interaction. </p> <p class="intro">In my free time I enjoy biking, exercising, and wood-working.<br>
+			</p>
+			
+			
+		</aside>
+		
+		
+				
+
+</div>
+<div class="middle">
+	
+	<div id ="resume">
+	<embed src="resume1.pdf" width="800" height= "1050" >
+	</div>
+	
+	<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false; 
+	});
+	
+	});
+	</script>
+</div>	
+	
+	<a href="#" class="scrollToTop"></a>
+	<footer class="footer">
+		<address>Zeilmann Development and Design</address>
+	</footer>
+	
+</body>
+</html>
